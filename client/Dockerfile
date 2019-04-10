@@ -7,5 +7,5 @@ ADD client.py /client/
 
 # I would like to introduce something new, the 'WORKDIR' command.
 # This command changes the base directory of your image.
-# Here we define '/server/' as base directory.
+# Here we define '/client/' as base directory.
 WORKDIR /client/
