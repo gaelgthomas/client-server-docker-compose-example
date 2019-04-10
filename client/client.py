@@ -8,7 +8,7 @@ import urllib.request
 # This variable contain the request on 'http://localhost:1234/'.
 # You must wondering what is 'http://localhost:1234'?
 # localhost: This means that the server is local.
-# 8000: Remember we define 8000 as the server port.
+# 1234: Remember we define 1234 as the server port.
 fp = urllib.request.urlopen("http://localhost:1234/")
 
 # 'encodedContent' correspond to the server response encoded ('index.html').
