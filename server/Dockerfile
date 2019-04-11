@@ -8,7 +8,7 @@ FROM python:latest
 # We use the keyword 'ADD' to do that.
 # Just a remember, the first parameter 'server.py' is the name of the file on the host.
 # The second parameter '/server/' is the path where to put the file on the image.
-# Here we put the file at the image '/server/' folder.
+# Here we put files at the image '/server/' folder.
 ADD server.py /server/
 ADD index.html /server/
 
