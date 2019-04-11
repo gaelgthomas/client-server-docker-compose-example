@@ -10,7 +10,7 @@ services:
   # As we said at the beginning, we want to create: a server and a client.
   # That is two services.
 
-  # First service (container): the server
+  # First service (container): the server.
   # Here you are free to choose the keyword.
   # It will allow you to define what the service corresponds to.
   # We use the keyword 'server' for the server.
@@ -37,7 +37,7 @@ services:
     ports:
       - 1234:1234
 
-  # Second service (container): the client
+  # Second service (container): the client.
   # We use the keyword 'client' for the server.
   client:
     # Here 'client/ corresponds to the path to the client folder
