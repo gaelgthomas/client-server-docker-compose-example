@@ -16,7 +16,7 @@ $ docker-compose build
 ### Launch
 
 ```
-$ docker-compose run
+$ docker-compose up
 ```
 
 ## Author
