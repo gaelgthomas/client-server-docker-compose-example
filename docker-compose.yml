@@ -26,17 +26,6 @@ services:
     # The following command will execute "python ./server.py".
     command: python ./server.py
 
-    # Remember that we defined in'server/server.py' 1234 as port.
-    # If we want to access the server from our computer (outside the container),
-    # we must share the content port with our computer's port.
-    # To do this, the keyword 'ports' will help us.
-    # Its syntax is as follows: [port we want on our machine]:[port we want to retrieve in the container]
-    # In our case, we want to use port 1234 on our machine and
-    # retrieve port 1234 from the container (because it is on this port that
-    # we broadcast the server).
-    ports:
-      - 1234:1234
-
   # Second service (container): the client.
   # We use the keyword 'client' for the server.
   client:
@@ -48,12 +37,9 @@ services:
     # The following command will execute "python ./client.py".
     command: python ./client.py
 
-    # The keyword 'network_mode' is used to define the network type.
-    # Here we define that the container can access to the 'localhost' of the computer.
-    network_mode: host
-
     # The keyword'depends_on' allows you to define whether the service
     # should wait until other services are ready before launching.
     # Here, we want the 'client' service to wait until the 'server' service is ready.
     depends_on:
       - server
+
