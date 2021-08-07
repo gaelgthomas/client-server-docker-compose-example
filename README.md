@@ -21,4 +21,4 @@ $ docker-compose up
 
 ## Author
 
-- **Gaël THOMAS** - [gael-thomas](https://github.com/gael-thomas)
+- **Gaël THOMAS** - [gaelgthomas](https://github.com/gaelgthomas)
